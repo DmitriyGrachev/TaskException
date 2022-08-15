@@ -19,7 +19,7 @@ package Two;
  в другом случае.
  */
 public class UserAuthenticator {
-    public static void userAuthorization(String login, String password, String confirmPassword) throws WrongLoginException, WrongPasswordException {
+    public static void userAuthenticator(String login, String password, String confirmPassword) throws WrongLoginException, WrongPasswordException {
         if (!login.matches(("^[a-zA-Z0-9]+$"))) {
             throw new WrongLoginException("Restricted numbers");
         }
